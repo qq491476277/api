@@ -8,7 +8,7 @@ login
   POST /login
 ---
   Body:
-<br/>
+---
 name | type |  required  | default | remark
 -|-|-
 username | string | true | null|
@@ -19,7 +19,7 @@ register
   POST /register
 ---
   Body:
-<br/>
+---
 name | type |  required  | default | remark
 -|-|-
 username | string | true | null|
@@ -31,7 +31,7 @@ change_password
   POST /change_password
 ---
   Body:
-<br/>
+---
 name | type |  required  | default | remark
 -|-|-
 username | string | true | null|
