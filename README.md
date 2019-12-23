@@ -1,12 +1,44 @@
+# longyuan-chaosacademy-activity
+
+
+           
 # api
 
 login 
   POST /login
-  Body:
 ---
-  
-name | 价格 |  数量  
+  Body:
+<br/>
+name | type |  required  | default | remark
 -|-|-
-香蕉 | $1 | 5 |
-苹果 | $1 | 6 |
-草莓 | $1 | 7 |
+username | string | true | null|
+password | string | true | null|
+verify_code | string | true | null|
+
+register 
+  POST /register
+---
+  Body:
+<br/>
+name | type |  required  | default | remark
+-|-|-
+username | string | true | null|
+password | string | true | null|
+confirm_password | string | true | null|
+verify_code | string | true | null|
+
+change_password 
+  POST /change_password
+---
+  Body:
+<br/>
+name | type |  required  | default | remark
+-|-|-
+username | string | true | null|
+password | string | true | null|
+confirm_password | string | true | null|
+verify_code | string | true | null|
+
+
+
+
