@@ -1,5 +1,10 @@
 # api
-name | 111 | 222 | 333 | 444
-:-: | :-: | :-: | :-: | :-:
-aaa | bbb | ccc | ddd | eee| 
-fff | ggg| hhh | iii | 000|
+
+login 
+  POST /login
+  Body:
+ name | 价格 |  数量  
+  -|-|-
+  香蕉 | $1 | 5 |
+  苹果 | $1 | 6 |
+  草莓 | $1 | 7 |
