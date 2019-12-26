@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js --inspect=[127.0.0.1:9777]  "
   },
   "keywords": [],
   "author": "",
@@ -13,6 +14,7 @@
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "koa": "^2.11.0",
+    "mysql2": "^2.1.0",
     "sequelize": "^5.21.3",
     "svg-captcha": "^1.4.0"
   }
