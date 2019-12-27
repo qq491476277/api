@@ -20,17 +20,18 @@ const add =   (username,password) => {
         password: password,
     });
 };
-const find =   (username,password) => {
-    let where = {
-        username:username
-    }
-    if(password){
-        where.password = password
-    }
+const find =   (where) => {
       return User.findAll({
         where: where
-
     });
+};
+
+const update =   async (where) => {
+
+    let data = await find(where)
+    console.log(11,data[0])
+    // data[0].root='zyc'
+    // await data[0].save()
 };
 
 // var Pet = sequelize.define('pet', {
@@ -66,4 +67,5 @@ const find =   (username,password) => {
 module.exports = {
     add,
     find,
+    update,
 };
